@@ -1,0 +1,93 @@
+
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  --brand-primary: #0D1B3E;
+  --brand-secondary: #00AEEF;
+  --brand-dark-bg: #081229;
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --border-color: #DEE2E6;
+  --light-gray: #E9ECEF;
+  --brand-light-bg: #F8F9FA;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+/* Modern scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: #bdc5d1;
+  border-radius: 10px;
+  border: 2px solid var(--light-gray);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Branded text selection for a premium feel */
+::selection {
+  background-color: var(--brand-secondary);
+  color: #ffffff;
+}
+
+/* Custom gradient for buttons and accents */
+.brand-gradient {
+  background: linear-gradient(90deg, #0095c7 0%, #00AEEF 100%);
+}
+
+/* Loading Spinner for React Suspense */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--brand-secondary);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom Prose styles for rich text content */
+.prose-custom {
+  --tw-prose-body: var(--text-secondary);
+  --tw-prose-headings: var(--text-primary);
+  --tw-prose-lead: var(--text-primary);
+  --tw-prose-links: var(--brand-primary);
+  --tw-prose-bold: var(--text-primary);
+  --tw-prose-counters: var(--brand-primary);
+  --tw-prose-bullets: var(--brand-secondary);
+  --tw-prose-hr: var(--border-color);
+  --tw-prose-quotes: var(--text-primary);
+  --tw-prose-quote-borders: var(--brand-secondary);
+  --tw-prose-captions: #6C757D;
+  --tw-prose-code: var(--brand-primary);
+  --tw-prose-pre-code: #E9ECEF;
+  --tw-prose-pre-bg: #212529;
+}
