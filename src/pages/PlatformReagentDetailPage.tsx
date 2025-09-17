@@ -1,15 +1,1 @@
-@@ .. @@
- import QualityIcon from '../components/icons/QualityIcon';
-
--const PlatformReagentDetailPage: React.FC = () => {
-+export default function PlatformReagentDetailPage() {
-     const { slug } = useParams<{ slug: string }>();
-     const reagent = reagentsData.find(r => r.slug === slug);
-
-@@ .. @@
-             <StickyCta />
-         </div>
-     );
--};
--
--export default PlatformReagentDetailPage;
+{"code":"rate-limited","message":"You have hit the rate limit. Please upgrade to keep chatting.","providerLimitHit":false,"isRetryable":true}
