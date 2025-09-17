@@ -1,7 +1,7 @@
 
 import { reagentsData } from './reagents';
 import { rapidTestData } from './rapid-tests';
-import { molecularTestData } from './molecular-tests';
+import { molecularTestData } from './molecular-tests.ts';
 import { elisaTestData } from './elisa-kits';
 import { clinicalChemistryData } from './clinical-chemistry';
 import { instrumentsData } from './instruments';

@@ -16,7 +16,7 @@ const SupportCenterPage = lazy(() => import('./pages/SupportCenterPage'));
 const PlatformPage = lazy(() => import('./pages/PlatformPage'));
 const ReagentsPage = lazy(() => import('./pages/ReagentsPage'));
 const ReagentDetailPage = lazy(() => import('./pages/ReagentDetailPage'));
-const PlatformReagentDetailPage = lazy(() => import('./pages/PlatformReagentDetailPage'));
+const PlatformReagentDetailPage = lazy(() => import('./pages/PlatformReagentDetailPage.tsx'));
 const DigitalSolutionsPage = lazy(() => import('./pages/DigitalSolutionsPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
